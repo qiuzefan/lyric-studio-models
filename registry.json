@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "registryVersion": "1.0.0",
+  "registryVersion": "1.1.0",
   "models": [
     {
       "id": "whisper-small-q5",
@@ -23,6 +23,7 @@
       ],
       "download": {
         "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small-q5_1.bin",
+        "mirrors": ["https://hf-mirror.net/ggerganov/whisper.cpp/resolve/main/ggml-small-q5_1.bin"],
         "sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb"
       }
     },
@@ -47,7 +48,30 @@
       ],
       "download": {
         "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo-q5_0.bin",
+        "mirrors": ["https://hf-mirror.net/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo-q5_0.bin"],
         "sha256": "394221709cd5ad1f40c46e6031ca61bce88931e6e088c188294c6d5a55ffa7e2"
+      }
+    },
+    {
+      "id": "qwen3-asr-1-7b-q6",
+      "name": "Qwen3-ASR 1.7B Q6_K",
+      "version": "1.0.0",
+      "engine": "speech.cpp",
+      "format": "gguf",
+      "sizeMB": 1684,
+      "minRAMMB": 8192,
+      "description": "适合识别带伴奏的中文歌曲。输出歌词文本，识别后手动打轴。",
+      "platforms": [
+        "windows-x64",
+        "macos-arm64"
+      ],
+      "capabilities": [
+        "transcription"
+      ],
+      "download": {
+        "url": "https://huggingface.co/sakasegawa/Qwen3-ASR-1.7B-GGUF/resolve/81e2423d24073cdeeccb5951df16accc89e075a2/Qwen3-ASR-1.7B-Q6_K.gguf",
+        "mirrors": ["https://hf-mirror.net/sakasegawa/Qwen3-ASR-1.7B-GGUF/resolve/81e2423d24073cdeeccb5951df16accc89e075a2/Qwen3-ASR-1.7B-Q6_K.gguf"],
+        "sha256": "2a05df6866d3e033ca3ca2bc8f9573abf57b431328e85ccc40eb367e93bdc987"
       }
     }
   ]
